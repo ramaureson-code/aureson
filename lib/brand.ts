@@ -1,0 +1,3 @@
+export const brand = { name: 'Aureson Apparels', email: 'sales@aureson.in', phone: '+91 88709 72097', whatsapp: '918870972097', location: 'Tiruppur, Tamil Nadu, India', instagram: 'https://www.instagram.com/aureson_apparels/', about: 'Founded in 2022 in Tiruppur, Tamil Nadu, Aureson Apparels creates quality knitted garments for individuals, brands and businesses. From ready-stock apparel to custom printing and embroidery, we bring your clothing ideas to life.' };
+export const imageUrl = (path: string, width=900) => `/.netlify/images?url=${encodeURIComponent(path)}&w=${width}&fm=webp&q=85`;
+export const money = (paise: number) => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR'}).format(paise/100);

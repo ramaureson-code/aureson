@@ -1,0 +1,2 @@
+ALTER TABLE "order_items" ADD COLUMN "line_total" integer DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE "admin_members" ADD CONSTRAINT "admin_members_id_profiles_id_fkey" FOREIGN KEY ("id") REFERENCES "profiles"("id");
